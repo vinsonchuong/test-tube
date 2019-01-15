@@ -1,0 +1,35 @@
+{
+  "name": "test-tube",
+  "version": "0.0.0",
+  "description": "An awesome package",
+  "keywords": [],
+  "homepage": "https://github.com/vinsonchuong/test-tube",
+  "bugs": "https://github.com/vinsonchuong/test-tube/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "repository": "vinsonchuong/test-tube",
+  "scripts": {
+    "prepare": "flow-typed update --skip",
+    "test": "standard -v --fix && flow && ava -v",
+    "release": "semantic-release",
+    "prepack": "build-esm"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^1.1.0",
+    "build-esm": "^4.2.0",
+    "flow-bin": "^0.90.0",
+    "flow-typed": "^2.5.1",
+    "overdub": "^2.2.1",
+    "semantic-release": "^15.13.3",
+    "standard-esnext": "^5.2.1"
+  },
+  "ava": {
+    "require": "overdub/register",
+    "babel": {
+      "testOptions": {
+        "extends": "overdub/babel"
+      }
+    }
+  }
+}
