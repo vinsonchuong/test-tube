@@ -4,12 +4,52 @@
 [![dependencies Status](https://david-dm.org/vinsonchuong/test-tube/status.svg)](https://david-dm.org/vinsonchuong/test-tube)
 [![devDependencies Status](https://david-dm.org/vinsonchuong/test-tube/dev-status.svg)](https://david-dm.org/vinsonchuong/test-tube?type=dev)
 
-An awesome package
+Test React components from the point of view of a user
 
-## Usage
+## Example
+```js
+import React from 'react'
+import { render } from 'test-tube'
+
+function run() {
+  const container = render(
+    <div>Hello World!</div>
+  )
+
+  console.log(container.innerHTML)
+}
+
+run()
+```
+
+## Installation
 Install [test-tube](https://yarnpkg.com/en/package/test-tube)
 by running:
 
 ```sh
 yarn add test-tube
 ```
+
+## API
+
+### `render(jsx)`
+Render a React element, returning a `<div>` containing it
+
+```js
+import React from 'react'
+import { render } from 'test-tube'
+
+function run() {
+  const container = render(
+    <div>Hello World!</div>
+  )
+
+  console.log(container.innerHTML)
+}
+
+run()
+```
+
+`render` attempts to run React components as if they were being run in a
+browser for an actual user. It uses [jsdom](https://github.com/jsdom/jsdom) to
+augment Node.js environments with support for browser APIs.

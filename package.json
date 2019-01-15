@@ -1,8 +1,11 @@
 {
   "name": "test-tube",
   "version": "0.0.0",
-  "description": "An awesome package",
-  "keywords": [],
+  "description": "Test React components from the point of view of a user",
+  "keywords": [
+    "react",
+    "test"
+  ],
   "homepage": "https://github.com/vinsonchuong/test-tube",
   "bugs": "https://github.com/vinsonchuong/test-tube/issues",
   "license": "MIT",
@@ -14,13 +17,22 @@
     "release": "semantic-release",
     "prepack": "build-esm"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jsdom": "^13.1.0",
+    "jsdom-global": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": ">= 16.0.0",
+    "react-dom": ">= 16.0.0"
+  },
   "devDependencies": {
     "ava": "^1.1.0",
     "build-esm": "^4.2.0",
     "flow-bin": "^0.90.0",
     "flow-typed": "^2.5.1",
     "overdub": "^2.2.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "semantic-release": "^15.13.3",
     "standard-esnext": "^5.2.1"
   },
