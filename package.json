@@ -18,6 +18,7 @@
     "prepack": "build-esm"
   },
   "dependencies": {
+    "css-to-xpath": "^0.1.0",
     "jsdom": "^13.1.0",
     "jsdom-global": "^3.0.2"
   },
@@ -34,7 +35,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "semantic-release": "^15.13.3",
-    "standard-esnext": "^5.2.1"
+    "standard-esnext": "^5.2.1",
+    "testdouble": "^3.9.3"
   },
   "ava": {
     "require": "overdub/register",

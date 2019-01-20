@@ -39,17 +39,30 @@ Render a React element, returning a `<div>` containing it
 import React from 'react'
 import { render } from 'test-tube'
 
-function run() {
-  const container = render(
-    <div>Hello World!</div>
-  )
+const container = render(
+  <div>Hello World!</div>
+)
 
-  console.log(container.innerHTML)
-}
-
-run()
+console.log(container.innerHTML)
 ```
 
 `render` attempts to run React components as if they were being run in a
 browser for an actual user. It uses [jsdom](https://github.com/jsdom/jsdom) to
 augment Node.js environments with support for browser APIs.
+
+### `fillIn(container, labelText, value)`
+Find a form field by label and change its value.
+
+```js
+import React from 'react'
+import { render, fillIn } from 'test-tube'
+
+const container = render(
+  <div>
+    <label for="username">Username</label>
+    <input id="username" />
+  </div>
+)
+
+fillIn(container, 'Username', 'example-user')
+```
