@@ -50,6 +50,24 @@ console.log(container.innerHTML)
 browser for an actual user. It uses [jsdom](https://github.com/jsdom/jsdom) to
 augment Node.js environments with support for browser APIs.
 
+### `click(container, containedText)`
+Click on a button or link containing the given text
+
+```js
+import React from 'react'
+import { render, fillIn } from 'test-tube'
+
+const container = render(
+  <div>
+    <button>Click Here</button>
+  </div>
+)
+
+click(container, 'Click Here')
+```
+
+Only links and buttons (with the proper tag or ARIA role) are clickable.
+
 ### `fillIn(container, labelText, value)`
 Find a form field by label and change its value.
 
