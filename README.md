@@ -32,7 +32,7 @@ yarn add test-tube
 
 ## API
 
-### `render(jsx)`
+### `render(jsx, [container])`
 Render a React element, returning a `<div>` containing it
 
 ```js
@@ -49,6 +49,10 @@ console.log(container.innerHTML)
 `render` attempts to run React components as if they were being run in a
 browser for an actual user. It uses [jsdom](https://github.com/jsdom/jsdom) to
 augment Node.js environments with support for browser APIs.
+
+Optionally, a container (`HTMLElement`) to render into can be passed in (by
+default, `render` creates a new `<div>`). This enables usecases like
+re-rendering a component with different props.
 
 ### `click(container, containedText)`
 Click on a button or link containing the given text
