@@ -54,6 +54,27 @@ Optionally, a container (`HTMLElement`) to render into can be passed in (by
 default, `render` creates a new `<div>`). This enables usecases like
 re-rendering a component with different props.
 
+### `findElement(container, cssSelector, containedText)`
+Find the first element matching a CSS selector and optionally, containing some
+text
+
+```js
+import React from 'react'
+import { render, findElement } from 'test-tube'
+
+const container = render(
+  <div>
+    <button>Submit</button>
+    <button>Sign Up</button>
+  </div>
+)
+
+const submitButton findElement(container, 'button')
+const signUpButton = findElement(container, 'button', 'Sign Up')
+```
+
+If a matching element cannot be found, an exception is thrown.
+
 ### `click(container, containedText)`
 Click on a button or link containing the given text
 
