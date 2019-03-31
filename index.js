@@ -1,4 +1,6 @@
 /* @flow */
+export { default as setupJsdom } from './lib/setup-jsdom'
+
 export { default as render } from './lib/render'
 export { default as format } from './lib/format'
 export { default as findElement } from './lib/find-element'
