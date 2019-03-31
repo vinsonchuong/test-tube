@@ -68,6 +68,36 @@ const container = render(
 console.log(format(container))
 ```
 
+### `navigate(pathname)`
+Simulate a URL change.
+
+```js
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { render, format, navigate } from 'test-tube'
+
+const container = render(
+  <Router>
+    <>
+      <Route exact path='/' render={() => 'Home'} />
+      <Route exact path='/one' render={() => 'One'} />
+      <Route exact path='/two' render={() => 'Two'} />
+    </>
+  </Router>
+)
+
+console.log(format(container))
+
+navigate('/one')
+console.log(format(container))
+
+navigate('/two')
+console.log(format(container))
+```
+
+`navigate` changes `window.location` to match the given path and then dispatches
+a `popstate` event, which is verified to work with `react-router-dom`.
+
 ### `findElement(container, cssSelector, containedText)`
 Find the first element matching a CSS selector and optionally, containing some
 text
