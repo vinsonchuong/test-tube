@@ -54,6 +54,20 @@ Optionally, a container (`HTMLElement`) to render into can be passed in (by
 default, `render` creates a new `<div>`). This enables usecases like
 re-rendering a component with different props.
 
+### ```format(container)```
+Format an element into an HTML string to help with debugging
+
+```js
+import React from 'react'
+import { render, format } from 'test-tube'
+
+const container = render(
+  <div>Hello World!</div>
+)
+
+console.log(format(container))
+```
+
 ### `findElement(container, cssSelector, containedText)`
 Find the first element matching a CSS selector and optionally, containing some
 text
