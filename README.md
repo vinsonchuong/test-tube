@@ -124,7 +124,7 @@ Click on a button or link containing the given text
 
 ```js
 import React from 'react'
-import { render, fillIn } from 'test-tube'
+import { render, click } from 'test-tube'
 
 const container = render(
   <div>
@@ -152,4 +152,39 @@ const container = render(
 )
 
 fillIn(container, 'Username', 'example-user')
+```
+
+### `waitForPromises()`
+Wait for pending Promises to be resolved.
+
+```js
+import React, { useState } from 'react'
+import { render, format, click, waitForPromises } from 'test-tube'
+
+function Component() {
+  const [text, setText] = useState('Waiting')
+
+  return (
+    <div>
+      <span>{text}</span>
+      <button
+        onClick={async () => {
+          await Promise.resolve()
+          setText('Done')
+        }}
+      >
+        Do Work
+      </button>
+    </div>
+  )
+}
+
+async function run() {
+  const container = render(<Component />)
+  click(container, 'Do Work')
+  await waitForPromises()
+  console.log(format(container))
+}
+
+run()
 ```
