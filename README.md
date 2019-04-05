@@ -119,6 +119,9 @@ const signUpButton = findElement(container, 'button', 'Sign Up')
 
 If a matching element cannot be found, an exception is thrown.
 
+`findElement` searches the `textContent`, `aria-label` and `value` for the given
+text.
+
 ### `click(container, containedText)`
 Click on a button or link containing the given text
 
