@@ -98,6 +98,23 @@ console.log(format(container))
 `navigate` changes `window.location` to match the given path and then dispatches
 a `popstate` event, which is verified to work with `react-router-dom`.
 
+### `findElements(container, cssSelector)`
+Find all elements matching a CSS selector
+
+```js
+import React from 'react'
+import { render, findElements } from 'test-tube'
+
+const container = render(
+  <div>
+    <button>Submit</button>
+    <button>Sign Up</button>
+  </div>
+)
+
+const buttons = findElement(container, 'button')
+```
+
 ### `findElement(container, cssSelector, containedText)`
 Find the first element matching a CSS selector and optionally, containing some
 text
