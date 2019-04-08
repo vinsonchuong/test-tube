@@ -139,6 +139,25 @@ If a matching element cannot be found, an exception is thrown.
 `findElement` searches the `textContent`, `aria-label` and `value` for the given
 text.
 
+### `findInput(container, labelText)`
+Find an input element by its associated label
+
+```js
+import React from 'react'
+import { render, findInput } from 'test-tube'
+
+const container = render(
+  <div>
+    <label htmlFor="email">Email</label>
+    <input id="email" />
+  </div>
+)
+
+const emailInput = findInput(container, 'Email')
+```
+
+If a matching element cannot be found, an exception is thrown.
+
 ### `click(container, containedText)`
 Click on a button or link containing the given text
 
