@@ -193,6 +193,25 @@ const container = render(
 fillIn(container, 'Username', 'example-user')
 ```
 
+### `check(container, labelText)`
+Check an unchecked checkbox or radio button
+
+```js
+import React from 'react'
+import { render, check } from 'test-tube'
+
+const container = render(
+  <div>
+    <label for="confirm">Confirm</label>
+    <input id="confirm" type="checkbox" />
+  </div>
+)
+
+check(container, 'Username')
+```
+
+If the input is already checked, an exception will be thrown.
+
 ### `waitForPromises()`
 Wait for pending Promises to be resolved.
 
