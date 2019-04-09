@@ -212,6 +212,25 @@ check(container, 'Username')
 
 If the input is already checked, an exception will be thrown.
 
+### `uncheck(container, labelText)`
+Check an unchecked checkbox
+
+```js
+import React from 'react'
+import { render, uncheck } from 'test-tube'
+
+const container = render(
+  <div>
+    <label for="confirm">Confirm</label>
+    <input id="confirm" type="checkbox" checked />
+  </div>
+)
+
+uncheck(container, 'Username')
+```
+
+If the input is already unchecked, an exception will be thrown.
+
 ### `waitForPromises()`
 Wait for pending Promises to be resolved.
 
