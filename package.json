@@ -29,7 +29,7 @@
   "devDependencies": {
     "ava": "^1.4.1",
     "build-esm": "^4.2.1",
-    "flow-bin": "^0.95.1",
+    "flow-bin": "^0.96.0",
     "flow-typed": "^2.5.1",
     "overdub": "^2.3.0",
     "react": "^16.8.6",
