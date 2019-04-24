@@ -54,6 +54,9 @@ Optionally, a container (`HTMLElement`) to render into can be passed in (by
 default, `render` creates a new `<div>`). This enables usecases like
 re-rendering a component with different props.
 
+Note that JavaScript referenced using `<script>` tags will be downloaded and
+executed.
+
 ### ```format(container)```
 Format an element into an HTML string to help with debugging
 

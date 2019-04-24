@@ -29,8 +29,10 @@
   "devDependencies": {
     "ava": "^1.4.1",
     "build-esm": "^4.2.1",
+    "dynamic-script": "^1.0.3",
     "flow-bin": "^0.96.0",
     "flow-typed": "^2.5.1",
+    "get-port": "^5.0.0",
     "overdub": "^2.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
