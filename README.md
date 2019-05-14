@@ -179,6 +179,9 @@ click(container, 'Click Here')
 
 Only links and buttons (with the proper tag or ARIA role) are clickable.
 
+In addition, if the button is the submit button for a form, an `onSubmit` event
+will also be fired on the form.
+
 ### `fillIn(container, labelText, value)`
 Find a form field by label and change its value.
 
