@@ -237,6 +237,44 @@ uncheck(container, 'Username')
 
 If the input is already unchecked, an exception will be thrown.
 
+### `waitForRender(container, timeout = 5000)`
+Wait for the given container's HTML to be modified for upto the given timeout
+
+```js
+import React, { useState, useEffect } from 'react'
+import { render, format, waitForRender } from 'test-tube'
+
+function Component() {
+  const [text, setText] = useState('Waiting')
+
+  useEffect(() => {
+    setTimeout(() => {
+      setText('Done')
+    }, 3000)
+  })
+
+  return (
+    <div>
+      {text}
+    </div>
+  )
+}
+
+async function run() {
+  const container = render(<Component />)
+  console.log(container.textContent)
+  await waitForRender()
+  console.log(container.textContent)
+}
+
+run()
+```
+
+`waitForRender` uses
+[`MutationObserver`](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
+to detect when React completes its next render cycle and updates the container's
+HTML.
+
 ### `waitForPromises()`
 Wait for pending Promises to be resolved.
 

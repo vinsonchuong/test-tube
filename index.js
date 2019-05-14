@@ -6,6 +6,7 @@ export { default as waitForPromises } from './lib/wait-for-promises'
 export { default as render } from './lib/render'
 
 export { default as format } from './lib/format'
+export { default as waitForRender } from './lib/wait-for-render'
 export { default as findElements } from './lib/find-elements'
 export { default as findElement } from './lib/find-element'
 export { default as findInput } from './lib/find-input'
