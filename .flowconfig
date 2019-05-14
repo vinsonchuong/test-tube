@@ -6,6 +6,7 @@
 [libs]
 
 [lints]
+deprecated-utility=off
 
 [options]
 module.name_mapper='^test-tube$' -> '<PROJECT_ROOT>'
