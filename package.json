@@ -28,19 +28,19 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "ava": "^2.2.0",
-    "build-esm": "^4.2.1",
+    "ava": "^2.3.0",
+    "build-esm": "^4.2.2",
     "dynamic-script": "^1.0.3",
-    "flow-bin": "^0.103.0",
-    "flow-typed": "^2.6.0",
+    "flow-bin": "^0.107.0",
+    "flow-typed": "^2.6.1",
     "get-port": "^5.0.0",
-    "overdub": "^2.3.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "overdub": "^2.5.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
-    "semantic-release": "^15.13.18",
-    "standard-esnext": "^5.3.1",
-    "testdouble": "^3.12.2"
+    "semantic-release": "^15.13.24",
+    "standard-esnext": "^5.3.3",
+    "testdouble": "^3.12.4"
   },
   "ava": {
     "require": "overdub/register",
