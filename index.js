@@ -4,6 +4,7 @@ export { default as navigate } from './lib/navigate'
 export { default as waitForPromises } from './lib/wait-for-promises'
 
 export { default as render } from './lib/render'
+export { default as unrender } from './lib/unrender'
 
 export { default as format } from './lib/format'
 export { default as waitForRender } from './lib/wait-for-render'

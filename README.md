@@ -57,6 +57,37 @@ re-rendering a component with different props.
 Note that JavaScript referenced using `<script>` tags will be downloaded and
 executed.
 
+### `unrender(container)`
+Unmount a React element
+
+```js
+import React, { useEffect } from 'react'
+import { render, unrender } from 'test-tube'
+
+function ComponentWithSideEffect() {
+  useEffect(() => {
+    localStorage.setItem('globalVariable', 'foo')
+
+    return () => {
+      localStorage.removeItem('globalVariable')
+    }
+  })
+
+  return (
+    <div>Side Effect</div>
+  )
+}
+
+const container = render(<ComponentWithSideEffect />)
+console.log(localStorage.getItem('globalVariable'))
+
+unrender(container)
+console.log(localStorage.getItem('globalVariable'))
+```
+
+`unrender` unmounts a React component, triggering any relevant configured
+lifecycle hooks.
+
 ### ```format(container)```
 Format an element into an HTML string to help with debugging
 
