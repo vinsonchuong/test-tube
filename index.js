@@ -1,10 +1,13 @@
 /* @flow */
-export { default as setupJsdom } from './lib/setup-jsdom'
-export { default as navigate } from './lib/navigate'
-export { default as waitForPromises } from './lib/wait-for-promises'
+import setupJsdom from './lib/setup-jsdom'
+
+setupJsdom()
 
 export { default as render } from './lib/render'
 export { default as unrender } from './lib/unrender'
+
+export { default as navigate } from './lib/navigate'
+export { default as waitForPromises } from './lib/wait-for-promises'
 
 export { default as format } from './lib/format'
 export { default as waitForRender } from './lib/wait-for-render'
