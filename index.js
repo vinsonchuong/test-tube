@@ -1,7 +1,5 @@
 /* @flow */
-import setupJsdom from './lib/setup-jsdom'
-
-setupJsdom()
+import './lib/setup-jsdom'
 
 export { default as render } from './lib/render'
 export { default as unrender } from './lib/unrender'
