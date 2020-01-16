@@ -18,7 +18,7 @@
     "prepack": "build-esm"
   },
   "dependencies": {
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.0.0",
     "jsdom-global": "^3.0.2",
     "ms": "^2.1.2",
     "pretty": "^2.0.0"
@@ -31,16 +31,16 @@
     "ava": "^2.4.0",
     "build-esm": "^4.2.2",
     "dynamic-script": "^1.0.3",
-    "flow-bin": "^0.114.0",
+    "flow-bin": "^0.116.0",
     "flow-typed": "^2.6.2",
-    "get-port": "^5.1.0",
-    "overdub": "^2.5.1",
+    "get-port": "^5.1.1",
+    "overdub": "^2.5.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "semantic-release": "^15.14.0",
-    "standard-esnext": "^5.3.3",
-    "testdouble": "^3.12.4"
+    "semantic-release": "^16.0.2",
+    "standard-esnext": "^5.3.5",
+    "testdouble": "^3.12.5"
   },
   "ava": {
     "require": "overdub/register",
