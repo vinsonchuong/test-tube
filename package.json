@@ -18,7 +18,7 @@
     "prepack": "build-esm"
   },
   "dependencies": {
-    "jsdom": "^16.0.0",
+    "jsdom": "^16.0.1",
     "jsdom-global": "^3.0.2",
     "ms": "^2.1.2",
     "pretty": "^2.0.0"
@@ -28,7 +28,8 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "ava": "^2.4.0",
+    "@ava/babel": "^1.0.0",
+    "ava": "^3.0.0",
     "build-esm": "^4.2.2",
     "dynamic-script": "^1.0.3",
     "flow-bin": "^0.116.0",
