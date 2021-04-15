@@ -1,6 +1,6 @@
 # test-tube
 ![npm](https://img.shields.io/npm/v/test-tube.svg)
-[![Build Status](https://travis-ci.org/vinsonchuong/test-tube.svg?branch=master)](https://travis-ci.org/vinsonchuong/test-tube)
+[![CI Status](https://github.com/vinsonchuong/test-tube/workflows/CI/badge.svg)](https://github.com/vinsonchuong/test-tube/actions?query=workflow%3ACI)
 [![dependencies Status](https://david-dm.org/vinsonchuong/test-tube/status.svg)](https://david-dm.org/vinsonchuong/test-tube)
 [![devDependencies Status](https://david-dm.org/vinsonchuong/test-tube/dev-status.svg)](https://david-dm.org/vinsonchuong/test-tube?type=dev)
 
