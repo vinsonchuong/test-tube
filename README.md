@@ -12,7 +12,7 @@ import React from 'react'
 import { render } from 'test-tube'
 
 function run() {
-  const container = render(
+  const { container } = render(
     <div>Hello World!</div>
   )
 
@@ -33,13 +33,15 @@ yarn add test-tube
 ## API
 
 ### `render(jsx, [container])`
-Render a React element, returning a `<div>` containing it
+Render a React element, returning the `<div>` containing it and the
+corresponding
+[React root](https://reactjs.org/docs/react-dom-client.html#createroot).
 
 ```js
 import React from 'react'
 import { render } from 'test-tube'
 
-const container = render(
+const { container, root } = render(
   <div>Hello World!</div>
 )
 
@@ -57,7 +59,7 @@ re-rendering a component with different props.
 Note that JavaScript referenced using `<script>` tags will be downloaded and
 executed.
 
-### `unrender(container)`
+### `unrender(root)`
 Unmount a React element
 
 ```js
@@ -78,10 +80,10 @@ function ComponentWithSideEffect() {
   )
 }
 
-const container = render(<ComponentWithSideEffect />)
+const { container, root } = render(<ComponentWithSideEffect />)
 console.log(localStorage.getItem('globalVariable'))
 
-unrender(container)
+unrender(root)
 console.log(localStorage.getItem('globalVariable'))
 ```
 
@@ -95,7 +97,7 @@ Format an element into an HTML string to help with debugging
 import React from 'react'
 import { render, format } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>Hello World!</div>
 )
 
@@ -110,7 +112,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { render, format, navigate } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <Router>
     <>
       <Route exact path='/' render={() => 'Home'} />
@@ -139,7 +141,7 @@ Find all elements matching a CSS selector
 import React from 'react'
 import { render, findElements } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <button>Submit</button>
     <button>Sign Up</button>
@@ -157,7 +159,7 @@ text
 import React from 'react'
 import { render, findElement } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <button>Submit</button>
     <button>Sign Up</button>
@@ -180,7 +182,7 @@ Find an input element by its associated label
 import React from 'react'
 import { render, findInput } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <label htmlFor="email">Email</label>
     <input id="email" />
@@ -199,7 +201,7 @@ Click on a button or link containing the given text
 import React from 'react'
 import { render, click } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <button>Click Here</button>
   </div>
@@ -220,7 +222,7 @@ Find a form field by label and change its value.
 import React from 'react'
 import { render, fillIn } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <label for="username">Username</label>
     <input id="username" />
@@ -237,7 +239,7 @@ Check an unchecked checkbox or radio button
 import React from 'react'
 import { render, check } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <label for="confirm">Confirm</label>
     <input id="confirm" type="checkbox" />
@@ -256,7 +258,7 @@ Check an unchecked checkbox
 import React from 'react'
 import { render, uncheck } from 'test-tube'
 
-const container = render(
+const { container } = render(
   <div>
     <label for="confirm">Confirm</label>
     <input id="confirm" type="checkbox" checked />
@@ -292,7 +294,7 @@ function Component() {
 }
 
 async function run() {
-  const container = render(<Component />)
+  const { container } = render(<Component />)
   console.log(container.textContent)
   await waitForRender()
   console.log(container.textContent)
@@ -332,7 +334,7 @@ function Component() {
 }
 
 async function run() {
-  const container = render(<Component />)
+  const { container } = render(<Component />)
   click(container, 'Do Work')
   await waitForPromises()
   console.log(format(container))

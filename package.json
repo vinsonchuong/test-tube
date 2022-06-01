@@ -17,7 +17,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "jsdom": "^16.5.3",
+    "jsdom": "^19.0.0",
     "jsdom-global": "^3.0.2",
     "ms": "^2.1.3",
     "pretty": "^2.0.0"
@@ -27,16 +27,16 @@
     "react-dom": ">= 16.8.0"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
+    "ava": "^4.2.0",
     "dynamic-script": "^1.0.3",
-    "get-port": "^5.1.1",
-    "htm": "^3.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "semantic-release": "^17.4.2",
-    "testdouble": "^3.16.1",
-    "xo": "^0.38.2"
+    "get-port": "^6.1.2",
+    "htm": "^3.1.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "semantic-release": "^19.0.2",
+    "testdouble": "^3.16.5",
+    "xo": "^0.49.0"
   },
   "ava": {
     "verbose": "true"
@@ -47,7 +47,8 @@
     "semicolon": false,
     "rules": {
       "import/no-anonymous-default-export": "off",
-      "import/no-unassigned-import": "off"
+      "import/no-unassigned-import": "off",
+      "node/file-extension-in-import": "off"
     },
     "globals": [
       "window",
