@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "js-beautify": "^1.14.4",
-    "jsdom": "^20.0.0",
+    "jsdom": "^20.0.1",
     "jsdom-global": "^3.0.2",
     "ms": "^2.1.3"
   },
