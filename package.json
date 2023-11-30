@@ -17,7 +17,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "js-beautify": "^1.14.4",
+    "js-beautify": "^1.14.10",
     "jsdom": "^20.0.0",
     "jsdom-global": "^3.0.2",
     "ms": "^2.1.3"
