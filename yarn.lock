@@ -2416,7 +2416,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"editorconfig@npm:^1.0.3":
+"editorconfig@npm:^1.0.4":
   version: 1.0.4
   resolution: "editorconfig@npm:1.0.4"
   dependencies:
@@ -4670,18 +4670,26 @@ __metadata:
   linkType: hard
 
 "js-beautify@npm:^1.14.11":
-  version: 1.14.11
-  resolution: "js-beautify@npm:1.14.11"
+  version: 1.15.0
+  resolution: "js-beautify@npm:1.15.0"
   dependencies:
     config-chain: "npm:^1.1.13"
-    editorconfig: "npm:^1.0.3"
+    editorconfig: "npm:^1.0.4"
     glob: "npm:^10.3.3"
+    js-cookie: "npm:^3.0.5"
     nopt: "npm:^7.2.0"
   bin:
     css-beautify: js/bin/css-beautify.js
     html-beautify: js/bin/html-beautify.js
     js-beautify: js/bin/js-beautify.js
-  checksum: 23267f8e68a4cf190274906fbec98c4fa44025e1b7e1fa701480867c9ab6b2b90a1bb2b358cd487c34d735a1039c16bcb51f82d390bcc6384172cc540aa11c9b
+  checksum: 49369a52f1d2598e693e3d8785c180a97f8e7877768be51bbc7ded2d8255e6ae10b107a39db11618732a79458e772811b88e2fe17fc3f4017b699e1f65886913
+  languageName: node
+  linkType: hard
+
+"js-cookie@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "js-cookie@npm:3.0.5"
+  checksum: 04a0e560407b4489daac3a63e231d35f4e86f78bff9d792011391b49c59f721b513411cd75714c418049c8dc9750b20fcddad1ca5a2ca616c3aca4874cce5b3a
   languageName: node
   linkType: hard
 
