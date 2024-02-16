@@ -4670,8 +4670,8 @@ __metadata:
   linkType: hard
 
 "js-beautify@npm:^1.14.11":
-  version: 1.15.0
-  resolution: "js-beautify@npm:1.15.0"
+  version: 1.15.1
+  resolution: "js-beautify@npm:1.15.1"
   dependencies:
     config-chain: "npm:^1.1.13"
     editorconfig: "npm:^1.0.4"
@@ -4682,7 +4682,7 @@ __metadata:
     css-beautify: js/bin/css-beautify.js
     html-beautify: js/bin/html-beautify.js
     js-beautify: js/bin/js-beautify.js
-  checksum: 49369a52f1d2598e693e3d8785c180a97f8e7877768be51bbc7ded2d8255e6ae10b107a39db11618732a79458e772811b88e2fe17fc3f4017b699e1f65886913
+  checksum: 4140dd95537143eb429b6c8e47e21310f16c032d97a03163c6c7c0502bc663242a5db08d3ad941b87f24a142ce4f9190c556d2340bcd056545326377dfae5362
   languageName: node
   linkType: hard
 
