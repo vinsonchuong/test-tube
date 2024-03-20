@@ -3684,9 +3684,9 @@ __metadata:
   linkType: hard
 
 "get-port@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "get-port@npm:7.0.0"
-  checksum: 8d6ba2a45ed0171dcacf67c69faf315f4fddf09cdb6596648951746430103415b7a79feb35e78fba71e8bcbe0c3dbf64fea384963302c689dcae2359bea3b369
+  version: 7.1.0
+  resolution: "get-port@npm:7.1.0"
+  checksum: 896051fea0fd3df58c050566754ab91f46406e898ce0c708414739d908a5ac03ffef3eca7a494ea9cc1914439e8caccd2218010d1eeabdde914b9ff920fa28fc
   languageName: node
   linkType: hard
 
