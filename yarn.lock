@@ -5638,7 +5638,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.13.1, lodash@npm:^4.17.15, lodash@npm:^4.17.21":
+"lodash@npm:^4.13.1, lodash@npm:^4.17.15, lodash@npm:^4.17.21, lodash@npm:^4.18.1":
   version: 4.18.1
   resolution: "lodash@npm:4.18.1"
   checksum: 757228fc68805c59789e82185135cf85f05d0b2d3d54631d680ca79ec21944ec8314d4533639a14b8bcfbd97a517e78960933041a5af17ecb693ec6eecb99a27
@@ -7299,13 +7299,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"quibble@npm:^0.9.2":
-  version: 0.9.2
-  resolution: "quibble@npm:0.9.2"
+"quibble@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "quibble@npm:0.10.0"
   dependencies:
-    lodash: "npm:^4.17.21"
+    lodash: "npm:^4.18.1"
     resolve: "npm:^1.22.8"
-  checksum: 6fb25fde30f52fdeb5f69e7a46792c4684023060ae51469df9f293eae72f906895d2cd36fb11e6526ce9a3862b1572bdc8d7b96d3fdbf3047a99db6e7b482204
+  checksum: f86d0dac1869d6afd4eb3b5231c785013c0f998d76b31819ef25949eb27c8ec1cf54640d76a0d4ab31b6a8ce056b8cc11d2e3d7dc8346642312a4d87f616580e
   languageName: node
   linkType: hard
 
@@ -8495,14 +8495,14 @@ __metadata:
   linkType: soft
 
 "testdouble@npm:^3.20.1":
-  version: 3.20.2
-  resolution: "testdouble@npm:3.20.2"
+  version: 3.21.0
+  resolution: "testdouble@npm:3.21.0"
   dependencies:
     lodash: "npm:^4.17.21"
-    quibble: "npm:^0.9.2"
+    quibble: "npm:^0.10.0"
     stringify-object-es5: "npm:^2.5.0"
     theredoc: "npm:^1.0.0"
-  checksum: 093ee30319ec98cf427d42fc799f2272d1bfa25c70be7280198ec2425afbe97604482589c9ae851305cec0880ab170551541cc0360800295e6c3fd4034b85b44
+  checksum: f413d802605df71bed627eda123a75c9259e3145c9883b48bca00db853dd43c798fdd68054253de0c1af63fde32976fddfbc2a205c4869cf818e2a2a9129a533
   languageName: node
   linkType: hard
 
