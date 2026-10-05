@@ -7287,13 +7287,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"quibble@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "quibble@npm:0.10.1"
+"quibble@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "quibble@npm:0.11.0"
   dependencies:
     lodash: "npm:^4.18.1"
     resolve: "npm:^1.22.8"
-  checksum: 916753474dda1d021d51a6b723ddbea3e2566e2bc9b869acaf08b3444b0c9570a9f9b5f8f5e3ed085928902db48667aef5ff657cfac1493a361aa51e298f5246
+  checksum: 6941bbe71c61a34cdb8284595d589440931fef24ed15e27d517f1fd5aa9105dcd8cd7bcc5fb61d2d9db84912f2cf4ede0ca807601893989866d8b8961c15c976
   languageName: node
   linkType: hard
 
@@ -8483,14 +8483,14 @@ __metadata:
   linkType: soft
 
 "testdouble@npm:^3.20.1":
-  version: 3.21.1
-  resolution: "testdouble@npm:3.21.1"
+  version: 3.22.0
+  resolution: "testdouble@npm:3.22.0"
   dependencies:
     lodash: "npm:^4.17.21"
-    quibble: "npm:^0.10.1"
+    quibble: "npm:^0.11.0"
     stringify-object-es5: "npm:^2.5.0"
     theredoc: "npm:^1.0.0"
-  checksum: e99a7228feb996f881870a8f6d9e7f9ca1b76064c542e47111e9f819b6874cb37c9ac0fa07506f6317ddb4b4b9e07a6a64c76f6be48e8c17a49090f69739fe19
+  checksum: c777c30a15e1aab1f00433a71305bcd613c86b8d159941e8cfdff9e6f12e8ddcf0bd6a3709cf46993613cc606a459faec192dd0e30fb5a41f8ff3b47afa1bb86
   languageName: node
   linkType: hard
 
