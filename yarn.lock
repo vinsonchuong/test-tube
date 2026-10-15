@@ -7287,13 +7287,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"quibble@npm:^0.12.1":
-  version: 0.12.1
-  resolution: "quibble@npm:0.12.1"
+"quibble@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "quibble@npm:0.13.0"
   dependencies:
     lodash: "npm:^4.18.1"
     resolve: "npm:^1.22.8"
-  checksum: 79af41a9d4d1973d68ca830b9f688a9bb6863bcfdd98a008c7b7c6d4b9619303ba8fce756e502c146cd867b82abf03553103d92d4874b3429cc21da5c782d258
+  checksum: 3a437f356d1bde12ba2e98cb26273701c4c27e57d69293fe9e10dcc7c055f97df06b537135f60e009e1aee2e50233a80af471b9a581d994b5d6d90016eaf0590
   languageName: node
   linkType: hard
 
@@ -8474,7 +8474,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     react-router-dom: "npm:^7.0.1"
     semantic-release: "npm:^25.0.0"
-    testdouble: "npm:^3.20.1"
+    testdouble: "npm:^4.0.0"
     xo: "npm:^0.58.0"
   peerDependencies:
     react: ">= 18.0.0"
@@ -8482,15 +8482,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"testdouble@npm:^3.20.1":
-  version: 3.23.0
-  resolution: "testdouble@npm:3.23.0"
+"testdouble@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "testdouble@npm:4.0.0"
   dependencies:
     lodash: "npm:^4.17.21"
-    quibble: "npm:^0.12.1"
+    quibble: "npm:^0.13.0"
     stringify-object-es5: "npm:^2.5.0"
     theredoc: "npm:^1.0.0"
-  checksum: f7bea44d99258059e30765674d4fc3c1d913d748e53720b3cf5dc54904d1fc69deb99e4c04a8a1cdbef993c1b66f237a45a8b6e24047ca856c55483c69290114
+  checksum: 1413149adbee05ca5cab2c80d60ed3f8e177dd19e207bf4b2b234f68656a450ff5c6313639f9c0aa06716f3be84308e47a4491a1c6f0a9a7b4f73b199dcc025d
   languageName: node
   linkType: hard
 
